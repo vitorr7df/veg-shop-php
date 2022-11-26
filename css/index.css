@@ -1,0 +1,38 @@
+
+
+.active {
+	background-color: rgb(177, 2, 2);
+}
+
+li a:hover {
+	background-color: rgb(85, 25, 25);
+}
+
+li a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+li {
+	float: left;
+} 
+
+p {
+    
+	font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+nav {
+    text-align: center;
+}

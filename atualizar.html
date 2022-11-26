@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Cadastro VegShop &mdash; Página de login</title>
+	<link rel="icon" href="./img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/my-login.css">
+</head>
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="img/logo.png" alt="logo">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Atualizar cadastro</h4>
+							<form action="./atualizar.php" method="POST" class="my-login-validation" 
+							action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+								<div class="form-group">
+									<label for="nome">Nome</label>
+									<input id="nome" type="text" class="form-control" name="nome" required autofocus>
+									<div class="invalid-feedback">
+										Qual o seu nome?
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="email">E-Mail</label>
+									<input id="email" type="email" class="form-control" name="email" required>
+									<div class="invalid-feedback">
+										Endereço de email inválido
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="senha">Senha</label>
+									<input id="senha" type="password" class="form-control" name="senha" pattern="^([ a-zA-Z0-9@ *#]{8,15})$" title="A senha deve ter no mínimo 8 caracteres 
+									e no máximo 15 caracteres." required>
+									<div class="invalid-feedback">
+										Digite uma senha
+								</div>
+								</div>
+								<legend class="info_pessoal">Informações pessoais</legend>
+								<div class="form-group">
+									<label for="nascimento">Data de nascimento</label>
+									<input id="nascimento" type="date" class="form-control" name="nascimento" required> 
+									<div class="invalid-feedback">
+										Digite uma data de nascimento válida
+								</div>
+
+								<div class="form-group">
+									<label for="cpf">CPF</label>
+									<input id="cpf" type="text" class="form-control" name="cpf" maxlength="11" minlength="11" required> 
+								<div class="invalid-feedback">
+											Digite um CPF válido
+								</div>
+
+								<div class="form-group">
+									<label for="telefone">Telefone</label>
+									<input id="telefone" type="tel" class="form-control" name="telefone" maxlength="9" minlength="9" required> 
+									<div class="invalid-feedback">
+											Digite um telefone válido
+								</div>
+								
+								<legend class="info_endereco">Localidade</legend>
+								<div class="form-group">
+									<label for="cep">CEP</label>
+									<input id="cep" type="text" class="form-control" name="cep" maxlength="8" minlength="8" required> 
+									<div class="invalid-feedback">
+											Digite um cep válido
+								</div>
+
+								<div class="form-group">
+									<label for="endereco">Endereço</label>
+									<input id="endereco" type="text" class="form-control" name="endereco" required> 
+									<div class="invalid-feedback">
+											Digite um endereço válido
+								</div>
+
+								<div class="form-group">
+									<label for="cidade">Cidade</label>
+									<input id="cidade" type="text" class="form-control" name="cidade" required> 
+									<div class="invalid-feedback">
+											Digite uma cidade válida
+								</div>
+
+								<div class="form-group">
+									<label for="estado">Estado</label>
+									<input id="estado" type="text" class="form-control" name="estado" required> 
+									<div class="invalid-feedback">
+											Digite um estado válido
+								</div>
+
+								<div class="form-group">
+									<div class="custom-checkbox custom-control">
+										<input type="checkbox" name="agree" id="agree" class="custom-control-input" required="">
+										<label for="agree" class="custom-control-label">Eu aceitos os <a href="#">Termos e condições</a></label>
+										<div class="invalid-feedback">
+											Você aceita os termos e condições
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group m-0">
+									<button id="atualizar" name="atualizar" class="btn btn-primary btn-block" type="submit" value="atualizar">
+										Atualizar
+									</button>
+								</div>
+								<div class="mt-4 text-center">
+									Já tem uma conta? <a href="login.html">Login</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="footer">
+						Copyright &copy; 2022 &mdash; Vitor Ramos Dev 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

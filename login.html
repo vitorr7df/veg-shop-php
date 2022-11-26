@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>VegShop</title>
+	<link rel="icon" href="./img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/my-login.css">
+</head>
+
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="img/logo.png" alt="logo">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Acesse a sua conta</h4>
+							<form method="POST" action="login.php" class="my-login-validation">
+								<div class="form-group">
+									<label for="email">E-Mail</label>
+									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+									<div class="invalid-feedback">
+										Email inválido
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="password">Senha
+										<a href="esqueci-senha.html" class="float-right">
+											Esqueceu a Senha?
+										</a>
+									</label>
+									<input id="password" type="password" class="form-control" name="password" required>
+								    <div class="invalid-feedback">
+								    	Digite sua senha
+							    	</div>
+								</div>
+
+								<div class="form-group">
+									<div class="custom-checkbox custom-control">
+										<input type="checkbox" name="remember" id="remember" class="custom-control-input">
+										<label for="remember" class="custom-control-label">Lembrar dados</label>
+									</div>
+								</div>
+
+								<div class="form-group m-0">
+									<button id="autenticar" name="autenticar" type="submit" class="btn btn-primary btn-block" value="autenticar">
+										Login
+									</button>
+								</div>
+								<div class="mt-4 text-center">
+									Ainda não tem uma conta? <a href="cadastrar.html">Criar uma</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="footer">
+						Copyright &copy; 2022 &mdash; Vitor Ramos Dev 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
