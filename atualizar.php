@@ -63,7 +63,7 @@
 			
 			function atualizar() {
 						
-				if (valida() == true && sessaoautenticada()) {
+				if (valida() == true) {
 					
 					// abre conexão com o banco de dados
 					$conn = conectaDB();

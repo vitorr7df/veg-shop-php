@@ -12,12 +12,7 @@
 			include 'conection.php';
 			include 'pessoa.php';
 			include 'util.php';
-
-			// criar campo de senha no banco de dados
-			// alter TABLE pessoa ADD senha CHARACTER(8);
-			// inserir senha 123456 para todos
-			// update pessoa set senha = '123456';
-			
+	
 			function autenticarBind($conn, $pessoa){
 				
 				echo "<br> Email: ".$pessoa->getEmail();

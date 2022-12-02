@@ -13,7 +13,7 @@
 			include 'pessoa.php';
 			include 'util.php';
 			include 'validapessoa.php';
-		
+
 			function excluirOO($conn, $pessoa){
 				
 				echo "<br> Nome: ".$pessoa->getNome();
@@ -54,7 +54,7 @@
 			
 			function excluir() {
 						
-				if (valida() == true && sessaoautenticada()) {
+				if (valida() == true) {
 					
 					$conn = conectaDB();
 					
